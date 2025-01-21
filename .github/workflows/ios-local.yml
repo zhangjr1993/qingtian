@@ -21,7 +21,7 @@ jobs:
     # 验证文件完整性
     - name: Verify file integrity
       run: |
-        EXPECTED_MD5="b31931a98c97795428b0bb677cb2c743"
+        EXPECTED_MD5="900bf4cb9d41c0776de604713f4be19f"
         ACTUAL_MD5=$(md5 -q ipa/aichatgenie.ipa)
         
         if [ "$EXPECTED_MD5" != "$ACTUAL_MD5" ]; then
